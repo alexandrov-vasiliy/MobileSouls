@@ -1,5 +1,4 @@
-﻿using _Game.CodeBase.Cameralogic;
-using _Game.CodeBase.Infrastructure;
+﻿using _Game.CodeBase.Infrastructure;
 using _Game.CodeBase.Services.Input;
 using UnityEngine;
 
@@ -9,7 +8,7 @@ namespace _Game.CodeBase.Hero
     {
         public CharacterController CharacterController;
         public float movementSpeed = 4;
-        
+
         private IInputService _inputService;
         private Camera _camera;
 
@@ -21,8 +20,6 @@ namespace _Game.CodeBase.Hero
         private void Start()
         {
             _camera = Camera.main;
-            
-            _camera.GetComponent<CameraFollow>().Follow(gameObject);
         }
 
         private void Update()
@@ -34,12 +31,12 @@ namespace _Game.CodeBase.Hero
                 movementVector = _camera.transform.TransformDirection(_inputService.Axis);
                 movementVector.y = 0;
                 movementVector.Normalize();
-                
+
                 transform.forward = movementVector;
             }
-            
+
             movementVector += Physics.gravity;
-            
+
             CharacterController.Move(movementSpeed * movementVector * Time.deltaTime);
         }
     }
