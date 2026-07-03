@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4123387318007434794
+--- !u!1 &5795328758445758615
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8915673849331607888}
-  - component: {fileID: 169051569339729854}
+  - component: {fileID: 8105684625902039040}
+  - component: {fileID: 958810451495622488}
   m_Layer: 0
-  m_Name: '[GameBootstrapper]'
+  m_Name: '[GameRunner]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8915673849331607888
+--- !u!4 &8105684625902039040
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4123387318007434794}
+  m_GameObject: {fileID: 5795328758445758615}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.47483, y: 0, z: -10.28269}
+  m_LocalPosition: {x: -10.88196, y: -0, z: -13.51649}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &169051569339729854
+--- !u!114 &958810451495622488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4123387318007434794}
+  m_GameObject: {fileID: 5795328758445758615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b34f3903e69f1f40b67a330630c41e7, type: 3}
+  m_Script: {fileID: 11500000, guid: ea7dcaa188944985ad022ce2054bfa61, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::_Game.CodeBase.Infrastructure.GameBootstrapper
-  CurtainPrefab: {fileID: 770936104814654556, guid: 9a4f7744a78dc024a94d2f34c0e2baa0, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::_Game.CodeBase.Infrastructure.GameRunner
+  BootstrapperPrefab: {fileID: 169051569339729854, guid: 8f91881233e6fad4ca89adfd6ecb1deb, type: 3}

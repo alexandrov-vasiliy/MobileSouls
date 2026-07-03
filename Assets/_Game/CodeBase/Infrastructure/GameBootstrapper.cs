@@ -1,17 +1,18 @@
+using _Game.CodeBase.Infrastructure.States;
+using _Game.CodeBase.Ui;
 using UnityEngine;
 
 namespace _Game.CodeBase.Infrastructure
 {
-    [DefaultExecutionOrder(-50)]
     public class GameBootstrapper : MonoBehaviour, ICoroutineRunner
     {
-        public LoadingCurtain Curtain;
+        public LoadingCurtain CurtainPrefab;
         
         private Game _game;
 
         private void Awake()
         {
-            _game = new Game(this, Curtain);
+            _game = new Game(this, Instantiate(CurtainPrefab));
             _game.StateMachine.Enter<BootstrapState>();
             
             DontDestroyOnLoad(this);

@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4347f8760f98438d8afa1a2ab1975012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Game.CodeBase.Hero.HeroMove
-  CharacterController: {fileID: 5706928305964020363}
   movementSpeed: 4
 --- !u!143 &5706928305964020363
 CharacterController:
@@ -86,8 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a345d8c19724547a5046e6360ecad0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::_Game.CodeBase.Hero.HeroAnimator
-  Animator: {fileID: 3083786576353758398}
-  CharacterController: {fileID: 5706928305964020363}
+  animator: {fileID: 3083786576353758398}
 --- !u!1001 &8908500650953781551
 PrefabInstance:
   m_ObjectHideFlags: 0

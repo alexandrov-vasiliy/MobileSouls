@@ -1,6 +1,6 @@
-﻿using System;
+﻿using _Game.CodeBase.Ui;
 
-namespace _Game.CodeBase.Infrastructure
+namespace _Game.CodeBase.Infrastructure.States
 {
     public class GameLoopState : IState
     {
