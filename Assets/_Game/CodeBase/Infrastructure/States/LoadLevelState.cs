@@ -60,7 +60,6 @@ namespace _Game.CodeBase.Infrastructure.States
 
             _gameFactory.CreateHud();
 
-            CameraFollow(hero);
         }
 
         private static void CameraFollow(GameObject hero)

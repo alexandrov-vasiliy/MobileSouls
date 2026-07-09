@@ -68,16 +68,16 @@ MonoBehaviour:
     m_Value: 0.34
   contrast:
     m_OverrideState: 1
-    m_Value: 33
+    m_Value: 30
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1.804364, g: 0.73686075, b: 0.77052927, a: 1}
+    m_Value: {r: 1.2876184, g: 1.3920326, b: 1.4013096, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 12
 --- !u!114 &-3357603926938260329
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
   m_Name: LensDistortion
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.LensDistortion
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
     m_Value: -0.6
